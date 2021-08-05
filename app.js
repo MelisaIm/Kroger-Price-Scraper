@@ -53,6 +53,9 @@ axios(shopSearchUrl)
 .catch(console.error);
 });
 
+app.get('/*', (request, response, next) => {
+	response.status(404).json('NOT_FOUND');
+});
 
 function errorHandler (err, req, res, next) {
   if (res.headersSent) {
