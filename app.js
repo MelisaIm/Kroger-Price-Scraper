@@ -66,6 +66,6 @@ function errorHandler (err, req, res, next) {
 /*
     LISTENER
 */
-app.listen(PORT, function(){         
+app.listen(PORT, () => {         
   console.log('Express started on http://localhost:' + PORT + '; press Ctrl-C to terminate.')
   });
