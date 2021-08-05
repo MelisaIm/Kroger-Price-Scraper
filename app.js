@@ -32,7 +32,7 @@ function findData($) {
 
 app.get('/', (req, res) => {
 const searchTerm = req.query.search;
-const shopSearchUrl = `http://www.kroger.com/search?query=${searchTerm}&searchType=default_search&fulfillment=all`;
+const shopSearchUrl = `https://www.kroger.com/search?query=${searchTerm}&searchType=default_search&fulfillment=all`;
 console.log(shopSearchUrl)
 axios(shopSearchUrl)
 .then(response => {
